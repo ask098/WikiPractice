@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="My test suite" verbose="1">
+	<parameter name="StringC" value="I love "></parameter>
+	<parameter name="StringD" value="test automation"></parameter>
+	<parameter name="url" value="https://www.wikipedia.org/"/>
+	<parameter name="browser" value="firefox"/>
+	<test name="my first test>">
+		<classes>
+			<class name="com.jcastro.wiki.test.WikiTest"></class>
+		</classes>
+	</test>
+
+<!-- 	 -->
+
+<listeners>
+		<listener class-name="com.jcastro.wiki.training.MyCoolListener" />
+	</listeners>
+
+	<!-- <test name="My first test">
+		<classes>
+			<class name="com.automation.training.tests.WikiTests"></class>
+		</classes> 
+	</test>-->
+</suite>
